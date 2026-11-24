@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --bg: 252 244 210; --ink: 107 30 42; --accent: 139 35 50; --accent2: 181 83 47; --band: 243 227 184; --band2: 111 127 82;
+  --f-script: "Great Vibes"; --f-display: "Cormorant Garamond"; --f-body: "DM Sans";
+}
+html { scroll-behavior: smooth; }
+body { @apply font-body bg-paper text-plum overflow-x-hidden; }
+:focus-visible { outline: 3px solid rgb(var(--accent2)); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
